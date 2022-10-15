@@ -24,14 +24,54 @@
     <main>
         <!-- h2 de prueba para ver si navega bien por las paginas -->
         <!-- <h2 style="color: #fff">Contacto</h2> -->
-        <form action="https://formsubmit.co/ascazziotta84@gmail.com" method="POST">
+        <form action="https://formsubmit.co/ascazziotta84@gmail.com" method="POST" name="formulario">
             <h2>Contacto</h2>
-            <input type="text" name="Nombre" placeholder="Nombre" required>
-            <input type="email" name="Correo" placeholder="Correo" required>
-            <input type="number" name="Telefono" placeholder="Teléfono" required>
-            <textarea name="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+            <input type="text" name="Nombre" placeholder="Nombre" >
+            <input type="email" name="Correo" placeholder="Correo" >
+            <input type="number" name="Telefono" placeholder="Teléfono" >
+            <textarea name="mensaje" placeholder="Escriba aquí su mensaje" ></textarea>
             <input type="submit" value="Enviar" id="boton">
         </form>
+
+        <script>
+            (function() {
+            var formulario = document.getElementsByName('formulario')[0],
+                elementos = formulario.elements,
+                boton = document.getElementById('btn');
+
+            var validarNombre = function(e){
+                if(formulario.Nombre.value == 0) {
+                    alert("Completa el campo nombre")
+                    e.preventDefault();
+                }
+            };
+
+            var validarCorreo = function(e){
+                if(formulario.Correo.value == 0) {
+                    alert("Completa el campo correo")
+                    e.preventDefault();
+                }
+            };
+
+            var validarTelefono = function(e){
+                if(formulario.Telefono.value == 0) {
+                    alert("Completa el campo Teléfono")
+                    e.preventDefault();
+                }
+            };
+
+            
+            
+            var validar = function(e){
+                validarNombre(e);
+                validarCorreo(e);
+                validarTelefono(e);                
+            };
+
+            formulario.addEventListener("submit", validar);
+        }())
+        </script>
+
         <h2>
             <img src="../imagenes/whats.png" height="30px">
             <a href="https://api.whatsapp.com/send?phone=1137778541" target="_blank">
