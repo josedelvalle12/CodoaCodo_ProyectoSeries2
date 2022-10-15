@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 60px;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0 30px;
+}
+
+.menu li a, .menu-2 li a{
+    padding: 0 70px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+}
+
+.menu-2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 0 30px;
+}
+
+/* Seccion 1 - Breaking Bad */
+
+.seccion-1 .forma-borde1 {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 250px;
+    width: 60%;
+    height: 450px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    border-bottom: #000;
+    z-index: -1;
+}
+
+.seccion-1 .nombre-fondo1 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 320px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+.forma-borde1 .espacio-btn {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.seccion-1 .forma-borde1 .espacio-btn .btn1 {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    width: 125px;
+    height: 50px;
+    border: 4px solid #093;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.seccion-1 .forma-borde1 .btn1 a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn1:hover {
+    background-color: #00ce4593;
+}
+
+.humo-verde {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    margin-top: -290px;
+}
+
+.walter-white {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -95px;
+}
+
+.nombre1 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    margin-left: 20px;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.titulo1 {
+    display: flex;
+    justify-content: center;
+    font-family: "roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Seccion 1 - Info */
+
+.container-ul {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-1 .forma-borde1 ul {
+    opacity: 0;
+    position: relative;
+    color: #fff;
+    padding: 0 0 0 45px;
+    margin: 70px 300px 0 50px;
+}
+
+.seccion-1 .forma-borde1 ul li {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+/* Seccion 2 - Better call Saul */
+
+.container-ul2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-2 .forma-borde2 {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 280px;
+    width: 60%;
+    height: 450px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    border-bottom: #000;
+    z-index: -1;
+    
+}
+
+.forma-borde2 .espacio-btn2 {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.seccion-2 .forma-borde2 .btn2 {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    width: 125px;
+    height: 50px;
+    border: 4px solid rgb(153, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seccion-2 .forma-borde2 .btn2 a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn2:hover {
+    background-color: #ce000093;
+}
+
+.humo-rojo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    margin-top: -370px;
+}
+
+.nombre2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    margin-left: 20px;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.saul {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.seccion-2 .nombre-fondo2 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 320px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-family: "roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Seccion 2 - info */
+
+.container-ul2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-2 .forma-borde2 ul {
+    opacity: 0;
+    position: relative;
+    color: #fff;
+    padding: 0 0 0 45px;
+    margin: 70px 300px 0 50px;
+}
+
+.seccion-2 .forma-borde2 ul li {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+/* Seccion 3 - Succession */
+
+.container-ul3 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-3 .forma-borde3 {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 280px;
+    width: 60%;
+    height: 450px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    border-bottom: #000;
+    z-index: -1;
+}
+
+.forma-borde3 .espacio-btn3 {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.seccion-3 .forma-borde3 .btn3 {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    width: 125px;
+    height: 50px;
+    border: 4px solid rgb(153, 125, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seccion-3 .forma-borde3 .btn3 a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn3:hover {
+    background-color: #ceb90093;
+}
+
+.humo-amarillo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    margin-top: -370px;
+}
+
+.nombre3 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    margin-left: 20px;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.succession {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -97px;
+}
+
+.seccion-3 .nombre-fondo3 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 320px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+.titulo3 {
+    display: flex;
+    justify-content: center;
+    font-family: "roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Seccion 3 - Info */
+
+.container-ul3 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-3 .forma-borde3 ul {
+    opacity: 0;
+    position: relative;
+    color: #fff;
+    padding: 0 0 0 45px;
+    margin: 70px 300px 0 50px;
+}
+
+.seccion-3 .forma-borde3 ul li {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    
+}
+
+footer .redessociales {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+footer .redes img {
+    width: 35px;
+    margin: 0 5px;
+}
+
+footer .redes img:hover {
+    opacity: 80%;
+}
+
+
+footer .derechos {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* contacto */
+
+form{
+    width: 450px;
+    margin:auto;
+    background: rgba(218, 218, 218, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor:pointer;
+    
+}
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+    
+}
+
+/* animaciones */
+
+@keyframes opacidad {
+    0% {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes cambio {
+    0% {
+        opacity: 0;
+        transform: scale(50%);
+    }
+    100% {
+        opacity: 100;
+        transform: scale(100%);
+    }
+}
+
+@keyframes info {
+    0% {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    100% {
+        opacity: 100;
+    }
+}
