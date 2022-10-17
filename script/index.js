@@ -6,28 +6,31 @@ window.onload = function(){
 
     nav.style.animation = "cambio 2s ease-out";
     animacion.style.animation = "opacidad 2s ease-out";
-    animacion2.style.opacity = "0";
-    animacion3.style.opacity = "0";
+    
 }
 
-window.addEventListener(`scroll`, function(){
-    let animacion = document.getElementById("seccion-2");
-    let animacion2 = document.getElementById("seccion-3");
-    let posicionObj1 = animacion.getBoundingClientRect().bottom;
-    let posicionObj2 = animacion2.getBoundingClientRect().bottom;
-    console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight/4;
-    
-    if (posicionObj1 > tamañoDePantalla) {
-        animacion.style.animation = "opacidad 2s ease-out";
-    } else if (posicionObj2 > tamañoDePantalla) {
-        animacion2.style.animation = "opacidad 2s ease-out";
-    } 
+// Animaciones Scroll
+const seccion2 = document.getElementById("seccion-2");
+const seccion3 = document.getElementById("seccion-3");
+const cargarSeccion = (entradas, observador)=> {
+    entradas.forEach((entrada) => {
+        console.log(entradas);
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add("visible");
+        }
+    });
+}
 
-    animacion.style.opacity = "100";
-    animacion2.style.opacity = "100";
-})
+const observador = new IntersectionObserver(cargarSeccion, {
+    root: null,
+    rootMargin: `0px 0px 0px 0px`,
+    threshold: 0.5
+});
 
+observador.observe(seccion2);
+observador.observe(seccion3);
+
+// Animaciones Boton
 document.getElementById("btn1").onclick = function() {
     let humo1 = document.getElementById("humo-verde");
     let imagen1 = document.getElementById("walter-white");
