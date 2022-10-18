@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
+    font-family: "Roboto", sans-serif;
 }
 
 .nav {
@@ -586,8 +587,81 @@ textarea{
     }
 }
 
-/* NEWSLETTER*/
+/* ESTRENOS */
 
+.container {
+    width: 75%;
+    height: 1800px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.estreno {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    justify-content: space-evenly;
+    /* transform: translate(480px); */
+}
+
+.tarjeta-container{
+    height: 550px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container .tarjeta img {
+    width: auto;
+    height: 100%;
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.tarjeta-datos {
+    margin-left: 8px;
+}
+
+.flecha-trailer {
+    color: white;
+    display: flex;
+    width: 20%;
+    padding: 0 50px 0 0;
+    justify-content: center;
+}
+
+.video {
+    height: 550px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe 
+
+
+/* NEWSLETTER*/
 
 h2{
     color: #fff;

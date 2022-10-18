@@ -132,3 +132,27 @@ document.getElementById("btn3").onclick = function() {
     }
 }
 
+// Tarjetas Estreno
+
+let cad=`
+<div class="tarjeta-container">
+`
+    for(let i=0; i< series.length ; i++){
+      cad += `
+        <div class="tarjeta">
+            <img src="${series[i].imagen}" alt="foto">
+            <div class="tarjeta-datos">
+                <h4>${series[i].nombre}</h4>
+                <p>Genero: ${series[i].clasificacion}</p>
+                <p>Fecha: ${series[i].fecha_estreno} </p>
+                <p>Director: ${series[i].director} </p>
+                <p>Plataforma: ${series[i].plataforma} </p>
+            </div>
+        </div>
+       `
+    }       
+cad+=`
+    </div>
+`    
+
+document.getElementById("tarjeta-container").innerHTML = cad;
